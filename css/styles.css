@@ -368,24 +368,27 @@ body {
 }
 
 .clients-item {
+}
+.clients-link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
+
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 .clients-icon {
   fill: #afb1b8;
 }
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 /* --------------FOOTER----------- */
@@ -547,8 +550,11 @@ body {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-.selection-types-item:hover,
-.selection-types-item:focus {
+.selection-link {
+  display: block;
+}
+.selection-link:hover,
+.selection-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
